@@ -5,8 +5,7 @@ const sass = require('gulp-sass');
 const spritesmith = require('gulp.spritesmith');
 const rimraf = require('rimraf');
 const rename = require('gulp-rename');
-const autoprefixer = require('gulp-autoprefixer');
-const sourcemap = require('gulp-sourcemap');
+
 
 /* -------- Server  -------- */
 gulp.task('server', function() {
@@ -82,23 +81,3 @@ gulp.task('default', gulp.series(
     gulp.parallel('watch', 'server')
     )
 );
-
-/*---------- Autoprefixer -------------*/
-exports.default = () => (
-    gulp.src('src/**/*.css')
-        .pipe(sourcemaps.init())
-        .pipe(autoprefixer())
-        .pipe(concat('all.css'))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('dist'))
-)
-
-/*--------------- SourceMap --------------*/
-gulp.task('javascript', function() {
-    gulp.src('src/**/*.js')
-        .pipe(sourcemaps.init())
-        .pipe(plugin1())
-        .pipe(plugin2())
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('dist'));
-});

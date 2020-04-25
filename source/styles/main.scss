@@ -1,0 +1,22 @@
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/normalize.scss/normalize";
+
+@import "global/mixins";
+@import "global/fonts.scss";
+@import "global/vars.scss";
+@import "global/common.scss";
+@import "global/base.scss";
+@import "global/sprite.scss";
+@import "global/icons";
+@import "global/button";
+
+@import "sections/title";
+@import "sections/header";
+@import "sections/nav";
+@import "sections/hero";
+@import "sections/about";
+@import "sections/approach";
+@import "sections/work";
+@import "sections/form";
+@import "sections/footer";
+

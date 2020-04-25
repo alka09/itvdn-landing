@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+build
+node_modules
+npm-debug.log
+.DS_Store
+.idea/.gitignore
+.idea/itvdn-landing.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+
